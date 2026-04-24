@@ -1,0 +1,141 @@
+.feedback-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 20px;
+  background-color: #f4f7f6;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.feedback-card {
+  background: #ffffff;
+  width: 100%;
+  max-width: 500px;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  border: 1px solid #eef2f1;
+}
+
+.feedback-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.feedback-header h2 {
+  color: #2d3436;
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.feedback-header p {
+  color: #636e72;
+  font-size: 0.95rem;
+}
+
+.feedback-header strong {
+  color: #ff7f50; /* Matching your brand orange */
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #2d3436;
+  font-size: 0.9rem;
+}
+
+.read-only-input {
+  width: 100%;
+  padding: 12px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  color: #b2bec3;
+  cursor: not-allowed;
+}
+
+/* Star Rating Styles */
+.star-rating-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+}
+
+.star-btn {
+  background: none;
+  border: none;
+  font-size: 2.5rem;
+  color: #dfe6e9;
+  cursor: pointer;
+  transition: transform 0.2s, color 0.2s;
+  padding: 0;
+  line-height: 1;
+}
+
+.star-btn:hover {
+  transform: scale(1.2);
+}
+
+.star-btn.active {
+  color: #fdcb6e; /* Bright gold/yellow */
+}
+
+.rating-text {
+  margin-left: 15px;
+  font-weight: bold;
+  color: #636e72;
+  font-size: 1rem;
+}
+
+/* Textarea styling */
+textarea {
+  width: 100%;
+  min-height: 120px;
+  padding: 15px;
+  border: 2px solid #edf2f7;
+  border-radius: 12px;
+  font-family: inherit;
+  font-size: 1rem;
+  resize: vertical;
+  transition: border-color 0.3s;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #ff7f50;
+}
+
+/* Submit Button */
+.submit-feedback-btn {
+  width: 100%;
+  padding: 15px;
+  background: #ff7f50;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  margin-top: 10px;
+}
+
+.submit-feedback-btn:hover {
+  background: #e66e45;
+}
+
+.submit-feedback-btn:active {
+  transform: scale(0.98);
+}
+
+.submit-feedback-btn:disabled {
+  background: #fab1a0;
+  cursor: not-allowed;
+}
