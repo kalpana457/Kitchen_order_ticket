@@ -1,0 +1,97 @@
+.admin-page-wrapper {
+  background-color: #f1f5f9;
+  min-height: 100vh;
+  padding: 30px 5%;
+  font-family: 'Inter', sans-serif;
+}
+
+.admin-main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.header-branding h1 { color: #0f172a; margin: 0; font-size: 1.8rem; }
+.header-branding p { color: #64748b; margin: 5px 0 0 0; }
+
+/* Top Stat Boxes */
+.admin-top-stats { display: flex; gap: 12px; }
+
+.stat-box {
+  background: white;
+  padding: 15px 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+  border: 1px solid #e2e8f0;
+  min-width: 150px;
+}
+
+.stat-box.revenue { border-top: 4px solid #3b82f6; }
+.stat-box.served { border-top: 4px solid #10b981; }
+
+.stat-label { display: block; font-size: 0.7rem; color: #94a3b8; font-weight: 700; text-transform: uppercase; }
+.stat-number { font-size: 1.5rem; font-weight: 800; color: #1e293b; display: block; margin-top: 5px; }
+
+/* Row Layout */
+.admin-list-container { max-width: 1200px; margin: 0 auto; }
+
+.admin-data-row {
+  background: white;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  padding: 20px 30px;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 3fr 1.2fr;
+  align-items: center;
+  border: 1px solid #e2e8f0;
+  transition: all 0.2s;
+}
+
+.admin-data-row:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+
+.order-id-label { font-weight: 800; color: #0f172a; font-size: 1.1rem; display: block; }
+.customer-name-label { color: #64748b; font-size: 0.85rem; }
+
+/* Status Badges */
+.admin-badge {
+  font-size: 0.7rem;
+  font-weight: 800;
+  padding: 5px 12px;
+  border-radius: 50px;
+  background: #f1f5f9;
+  text-transform: uppercase;
+}
+
+.admin-badge.served, .admin-badge.delivered { background: #dcfce7; color: #166534; }
+.admin-badge.pending { background: #fef3c7; color: #92400e; }
+.admin-badge.ready { background: #dbeafe; color: #1e40af; }
+
+/* Items List */
+.admin-item-pill {
+  display: inline-block;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  padding: 4px 10px;
+  border-radius: 6px;
+  margin: 4px;
+  font-size: 0.8rem;
+  color: #334155;
+}
+
+/* Actions */
+.admin-col-finance { text-align: right; display: flex; align-items: center; justify-content: flex-end; gap: 25px; }
+.admin-row-amount { font-weight: 800; color: #0f172a; font-size: 1.1rem; }
+
+.admin-row-delete {
+  background: #fff1f2;
+  color: #e11d48;
+  border: 1px solid #fecdd3;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 0.75rem;
+}
+
+.admin-row-delete:hover { background: #e11d48; color: white; }

@@ -1,0 +1,211 @@
+/* --- LAYOUT --- */
+.pos-layout {
+  display: flex;
+  height: 100vh;
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.menu-column {
+  flex: 1;
+  padding: 25px;
+  overflow-y: auto;
+}
+
+.user-welcome {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  color: #2d3436;
+}
+
+/* --- CATEGORY PILLS --- */
+.category-filter-bar {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 30px;
+  padding: 5px;
+  overflow-x: auto;
+}
+
+.filter-btn {
+  padding: 10px 24px;
+  border: 1px solid #dfe6e9;
+  background: white;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.filter-btn.active {
+  background: #ff7f50;
+  color: white;
+  border-color: #ff7f50;
+  box-shadow: 0 4px 12px rgba(255, 127, 80, 0.3);
+}
+
+/* --- MENU GRID & CARDS --- */
+.menu-pos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.menu-pos-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+  height: 290px;
+  border: 1px solid #f1f2f6;
+}
+
+.menu-pos-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.menu-item-image-wrapper {
+  width: 100%;
+  height: 160px;
+  overflow: hidden;
+}
+
+.menu-item-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-info {
+  padding: 15px;
+  text-align: center;
+}
+
+.card-info h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #2d3436;
+}
+
+.card-price {
+  color: #ff7f50;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 5px;
+}
+
+.add-pos-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #ff7f50;
+  color: white;
+  border: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 24px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+/* --- SIDEBAR & CART --- */
+.cart-sidebar {
+  width: 380px;
+  background: white;
+  border-left: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  box-shadow: -5px 0 15px rgba(0,0,0,0.02);
+}
+
+.cart-header {
+  padding: 25px;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.cart-item-block {
+  padding: 15px;
+  margin: 10px 15px;
+  background: #fdfdfd;
+  border: 1px solid #f1f1f1;
+  border-radius: 12px;
+}
+
+.cart-item-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #f1f2f6;
+  width: fit-content;
+  padding: 4px;
+  border-radius: 8px;
+}
+
+.quantity-controls button {
+  width: 28px;
+  height: 28px;
+  border: none;
+  background: white;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #ff7f50;
+  font-weight: bold;
+}
+
+.cart-summary {
+  padding: 20px;
+  background: #fafafa;
+  border-top: 2px dashed #dfe6e9; /* Receipt look */
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  color: #636e72;
+}
+
+.summary-total-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #eee;
+}
+
+.total-value {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #2d3436;
+}
+
+.bill-payment-btn {
+  width: calc(100% - 40px);
+  margin: 20px;
+  padding: 18px;
+  background: #ff7f50;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.bill-payment-btn:hover {
+  background: #e6673d;
+  box-shadow: 0 6px 15px rgba(255, 127, 80, 0.4);
+}

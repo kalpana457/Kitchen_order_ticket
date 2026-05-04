@@ -1,0 +1,110 @@
+/* Container to center the card */
+.staff-login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f2f5; /* Light grey neutral background */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* The Login Card */
+.staff-login-card {
+  background: #ffffff;
+  padding: 45px;
+  border-radius: 16px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+}
+
+.login-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.staff-login-card h2 {
+  color: #1a202c;
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.login-subtitle {
+  color: #718096;
+  font-size: 0.95rem;
+  margin-top: 8px;
+  margin-bottom: 30px;
+}
+
+/* Form Groups */
+.form-group {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #4a5568;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 14px;
+  border: 2px solid #e2e8f0;
+  border-radius: 10px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #4a90e2;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1);
+}
+
+/* The Login Button */
+.login-btn {
+  width: 100%;
+  padding: 15px;
+  background-color: #2d3748; /* Dark, authoritative blue-grey */
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+  margin-top: 10px;
+}
+
+.login-btn:hover:not(:disabled) {
+  background-color: #1a202c;
+}
+
+.login-btn:active:not(:disabled) {
+  transform: scale(0.98);
+}
+
+.login-btn:disabled {
+  background-color: #a0aec0;
+  cursor: not-allowed;
+}
+
+/* Footer text */
+.login-footer {
+  margin-top: 25px;
+  padding-top: 15px;
+  border-top: 1px solid #edf2f7;
+  font-size: 0.8rem;
+  color: #cbd5e0;
+  font-weight: bold;
+  letter-spacing: 1px;
+}

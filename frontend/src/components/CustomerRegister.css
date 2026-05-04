@@ -1,0 +1,80 @@
+/* IMPROVED CustomerRegister.css */
+
+.register-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f0f4f8; /* Very light cool grey */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.register-card {
+  background: #ffffff;
+  width: 100%;
+  max-width: 440px;
+  padding: 40px 50px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
+}
+
+/* 1. Improved Typography */
+.register-card h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #222222; /* High contrast but not pure black */
+  margin-bottom: 25px;
+  text-align: left; /* Keep it left-aligned like the reference */
+}
+
+/* 2. Vertical Form Layout (Flexbox) */
+.register-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Comfortable gap between elements */
+}
+
+/* 3. Modern Form Controls (Input fields) */
+.register-card input {
+  width: 100%;
+  padding: 14px;
+  font-size: 1rem;
+  border: 1px solid #dce1e7; /* Light grey border */
+  border-radius: 4px; /* Slight round, clean look */
+  background-color: #fcfdfe; /* Subtle off-white background */
+  box-sizing: border-box; /* Crucial for padding to work with width: 100% */
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+/* Professional Focus State */
+.register-card input:focus {
+  outline: none;
+  border-color: #00b67a; /* Signature Green */
+  box-shadow: 0 0 0 3px rgba(0, 182, 122, 0.1);
+}
+
+/* 4. The Action Button (Action Green) */
+.register-card button {
+  width: 100%;
+  padding: 15px;
+  margin-top: 10px;
+  background-color: #00b67a; /* Signature Action Green */
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  text-transform: uppercase; /* Match SaaS style */
+  transition: background-color 0.2s;
+}
+
+.register-card button:hover {
+  background-color: #009e66; /* Darker green on hover */
+}
+
+/* Improve placeholder color */
+.register-card input::placeholder {
+  color: #a0aab5;
+}
